@@ -1,0 +1,349 @@
+<html>
+    <title>C# KOD ÖRNEKLERİ</title>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<body>
+    <html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">KOD</a>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Ana Sayfa</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Sayfa2.html">Sayfa 2</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Sayfa3.html">Sayfa 3</a>
+    </li>
+  </ul>
+</nav>
+
+     <style>
+     body {
+    background-color:turquoise;
+    }
+    </style>
+       
+       
+    <div class="container pt-3 pb-5">
+        <a href="index.html" class="btn btn-info">Ana Sayfa</a>&nbsp;
+        <a href="Sayfa2.html" class="btn btn-info">Sayfa 2</a>&nbsp;
+        <a href="Sayfa3.html" class="btn btn-info">Sayfa 3</a>&nbsp;
+        <body>
+            <style> 
+            div {
+              border: 2px solid;
+              padding: 20px; 
+              width: 300px;
+              resize: horizontal;
+              overflow: auto;
+            }
+            </style>
+            <style>
+                div {
+                  background-color: white;
+                  width: 300px;
+                  border: 15px solid black;
+                  padding: 50px;
+                  margin: 20px;
+                }
+                </style>
+                 <img src="indir.png" alt="C#" width="100" height="100"> 
+                 <img src="indir.png" alt="C#" width="100" height="100"> 
+                 <img src="indir.png" alt="C#" width="100" height="100"> 
+                 <img src="indir.png" alt="C#" width="100" height="100"> 
+                 <img src="indir.png" alt="C#" width="100" height="100"> 
+                 <img src="indir.png" alt="C#" width="100" height="100"> 
+                 <img src="indir.png" alt="C#" width="100" height="100"> 
+        <h1 style="color:Tomato;">C# KOD ÖRNEKLERİ</h1>
+        <p style=font-size:33px;>Örnek-1<br> </p>
+            =>Ekranda Merhaba Dünya yazdıran basit Console örneği<br>
+            static void Main(string[] args)<br>
+        {<br>
+            Console.WriteLine("Merhaba Dünya.");<br>
+            Console.ReadKey();<br>
+        }<br>
+        </p>
+        <p style=font-size:33px;>Örnek-2<br> </p>
+            =>Ad ve Soyad bilgisini string değişenlere alarak ekranda yazdıran basit Console örneği:<br>
+            static void Main(string[] args)<br>
+        {<br>
+            string ad, soyad;<br>
+            Console.Write("Adınız : ");<br>
+            ad = Console.ReadLine();<br>
+            Console.Write("Soyadınız : ");<br>
+            soyad = Console.ReadLine();<br>
+            Console.WriteLine("Merhaba {0} {1}", ad, soyad);<br>    
+            Console.ReadKey();<br>
+        }<br>
+        <p style=font-size:33px;>Örnek-3<br> </p>
+            =>Kullanıcıdan 2 sayı isteyerek bu sayıların toplamını, farkını, çarpımını ve bölümünü ekranda gösteren basit C# Console Örneği:<br>
+            static void Main(string[] args)<br>
+        {<br>
+            double sayi1, sayi2, toplam,fark,carpim,bolum;<br>
+            Console.Write("1. Sayı : ");<br>
+            sayi1 = Convert.ToDouble(Console.ReadLine());<br>
+            Console.Write("2. Sayı : ");<br>
+            sayi2 = Convert.ToDouble(Console.ReadLine());<br>
+            toplam = sayi1 + sayi2;<br>
+            fark = sayi1 - sayi2;<br>
+            carpim = sayi1 * sayi2;<br>
+            bolum = sayi1 / sayi2;<br>
+            Console.WriteLine("{0} ve {1} Sayısının Toplamı : {2}", sayi1, sayi2, toplam);<br>
+            Console.WriteLine("{0} ve {1} Sayısının Farkı : {2}", sayi1, sayi2, fark);<br>
+            Console.WriteLine("{0} ve {1} Sayısının Çarpımı : {2}", sayi1, sayi2, carpim);<br>
+            Console.WriteLine("{0} ve {1} Sayısının Bölümü : {2}", sayi1, sayi2, bolum);<br>
+            Console.ReadKey();<br>
+        }<br>
+        </p>
+        <p style=font-size:33px;>Örnek-4<br> </p>
+           => Dikdörtgenin alanını ve çevresini hesaplayarak ekranda gösteren Console Örneği.<br>
+            static void Main(string[] args)<br>
+        {<br>
+            int kisa, uzun, alan, cevre;<br>
+            Console.Write("Kısa Kenar : ");<br>
+            kisa = Convert.ToInt32(Console.ReadLine());<br>
+            Console.Write("Uzun Kenar : ");<br>
+            uzun = Convert.ToInt32(Console.ReadLine());<br>
+            alan = kisa * uzun; //www.yazilimkodlama.com<br>
+            cevre = 2 * (kisa + uzun);<br>
+            Console.WriteLine("Alan : " + alan);<br>
+            Console.WriteLine("Çevre : " + cevre);<br>
+            Console.ReadKey();<br>
+        }<br>
+        </p>
+        <p style=font-size:33px;>Örnek-5<br> </p>
+           =>	Girilen 2 sayıdan büyük olanını bulan Console örneği:<br>
+           static void Main(string[] args)<br>
+        {<br>
+            int sayi1, sayi2;<br>
+            Console.Write("1. Sayı : ");<br>
+            sayi1 = Convert.ToInt32(Console.ReadLine());<br>
+            Console.Write("2. Sayı : ");<br>
+            sayi2 = Convert.ToInt32(Console.ReadLine());<br>
+            if(sayi1>sayi2)<br>
+            {<br>
+                Console.WriteLine("1. Sayı Büyük");<br>
+            }<br>
+            else if(sayi1==sayi2)<br>
+            {<br>
+                Console.WriteLine("İki Sayı Eşit");<br>
+            }<br>
+            else<br>
+            {<br>
+                Console.WriteLine("2. Sayı Büyük");<br>
+            }<br>
+            Console.ReadKey();<br>
+        }<br>
+        </p>
+        <p style=font-size:33px;>Örnek-6<br> </p> <br>
+          =>3 Yazılı notu girilen öğrencinin ortalamasını ve sınıf geçme durumunu gösteren Console Örneği.<br>
+          static void Main(string[] args)<br>
+          {<br>
+              double yazili1, yazili2, yazili3, ortalama;<br>
+              Console.Write("1. Yazılı : ");<br>
+              yazili1 = Convert.ToDouble(Console.ReadLine());<br>
+              Console.Write("2. Yazılı : ");<br>
+              yazili2 = Convert.ToDouble(Console.ReadLine());<br>
+              Console.Write("3. Yazılı : ");<br>
+              yazili3 = Convert.ToDouble(Console.ReadLine());<br>
+
+              ortalama = (yazili1 + yazili2 + yazili3) / 3;<br>
+              Console.WriteLine("Ortalamanız : " + ortalama);<br>
+   
+              if(ortalama>=50)<br>
+              {<br>
+                  Console.WriteLine("Geçtiniz");<br>
+              }<br>
+              else<br>
+              {<br>
+                  Console.WriteLine("Kaldınız");<br>
+              }<br>
+              Console.ReadKey();<br>
+          }<br>
+          <p style=font-size:33px;>Örnek-7<br> </p> <br>
+          =>Girilen sayının tek mi çift mi olduğunu bulan Console Örneği:<br>
+          static void Main(string[] args)<br>
+        {<br>
+            int sayi;<br>
+            Console.Write("Sayı : ");<br>
+            sayi = Convert.ToInt32(Console.ReadLine());<br>
+            if(sayi%2==0)<br>
+            {<br>
+                Console.WriteLine("Sayı Çift");<br>
+            }<br>
+ 
+            else<br>
+            {<br>
+                Console.WriteLine("Sayı Tek");<br>
+            }<br>
+        }<br>
+          <p style=font-size:33px;>Örnek-8<br> </p> <br>
+         =>Girilen sayının negatif mi pozitif mi olduğunu bulan Console örneği.<br>
+          static void Main(string[] args)<br>
+        {<br>
+            int sayi = Convert.ToInt32(Console.ReadLine());<br>
+            if(sayi<0)<br>
+            {<br>
+                Console.WriteLine("Negatif");<br>
+            }<br>
+            else if(sayi==0)<br>
+            {<br>
+                Console.WriteLine("Sayı Sıfır");<br>
+            }<br>
+            else<br>
+            {<br>
+                Console.WriteLine("Pozitif");<br>
+            }<br>
+            Console.ReadKey();<br>
+        }<br>
+         <p style=font-size:33px;>Örnek-9<br> </p> <br>
+        =>Girilen sayının 0-100 arasında olup olmadığını kontrol eden Console örneği.<br>
+             static void Main(string[] args)<br>
+                {<br>
+                    int sayi;<br>
+                    Console.Write("Sayıyı Girin : ");<br>
+                    sayi = Convert.ToInt32(Console.ReadLine());<br>
+                    if(sayi>=0 && sayi<=100)<br>
+                    {<br>
+                        Console.WriteLine("Girilen sayı 0-100 aralığında");<br>
+                    }<br>
+                    else<br>
+                    {<br>
+                        Console.WriteLine("Girilen sayı 0-100 aralığında değil");<br>
+                    }<br>
+                    Console.ReadKey();<br>
+                }<br>
+          <p style=font-size:33px;>Örnek-10<br> </p> <br>
+          =>Kullanıcının girdiği metni 10 kez alt alta yazdıran Console örneği.<br>
+          static void Main(string[] args)<br>
+          {<br>
+              Console.Write("Metni Gir : ");<br>
+              string metin = Console.ReadLine();<br>
+              for (int i = 1; i <= 10; i++)<br>
+              {<br>
+                  Console.WriteLine(metin);<br>
+              }<br>
+              Console.ReadKey();<br>
+          }<br>
+          <p style=font-size:33px;>Örnek-11<br> </p> <br>
+          =>Kullanıcının girdiği 10 sayıdan 50 den küçük olanların adetini bulan ve gösteren Console Örneği:<br>
+          static void Main(string[] args)<br>
+                  {<br>
+                      int sayi, adet=0;<br>
+                      for(int i=1;i<=10;i++)<br>
+                      {<br>
+                          Console.Write(i+".sayıyı Girin : ");<br>
+                          sayi = Int32.Parse(Console.ReadLine());<br>
+                          if(sayi<50)<br>
+                          {<br>
+                              adet++;<br>
+                          }<br>
+                      }<br>
+                      Console.WriteLine("50 den küçük girilen sayı adeti : "+adet);<br>
+                      Console.ReadKey();<br>
+                  }<br>
+          <p style=font-size:33px;>Örnek-12<br> </p> <br>
+          =>Kullanıcının girdiği 5 sayıdan 50′ den büyük olanların toplamını gösteren Console Örneği:<br> 
+          static void Main(string[] args)<br>
+          {<br>
+              int sayi, toplam = 0;<br>
+              for (int i = 1; i <= 5; i++)<br>
+              {<br>
+                  Console.Write(i + ".sayıyı Girin : ");<br>
+                  sayi = Int32.Parse(Console.ReadLine());<br>
+                  if (sayi > 50)<br>
+                  {<br>
+                      toplam+=sayi;<br>
+                  }<br>
+              }<br>
+              Console.WriteLine("50 den büyük girilen sayıların toplamı : " + toplam);<br>
+              Console.ReadKey();<br>
+          }<br>
+          <p style=font-size:33px;>Örnek-13<br> </p> <br>
+          =>Bilgisayarın rastgele tuttuğu 10 sayıdan çift ve tek olanların sayısını gösteren Console Örneği:<br>
+          static void Main(string[] args)<br>
+          {<br>
+          int sayi, tekAdet=0, ciftAdet=0;<br>
+          Random rnd = new Random();<br>
+          for (int i = 1; i <= 10; i++)<br>
+          {<br>
+          sayi = rnd.Next(1, 100);<br>
+          Console.WriteLine(sayi);<br>
+          if(sayi%2==0)<br>
+          {<br>
+          ciftAdet++;<br>
+          }<br>
+          else<br>
+          {<br>
+          tekAdet++;<br>
+          }<br>
+          }<br>
+          Console.WriteLine("Çift Sayı Adeti : {0}", ciftAdet);<br>
+          Console.WriteLine("Tek Sayı Adeti : {0}",tekAdet);<br>
+          Console.ReadKey();<br>
+          }<br>
+          <p style=font-size:33px;>Örnek-14<br> </p> <br>
+          =>Bilgisayar tarafından rastgele tutulan 10 sayıdan 50′ den yukarı olanların ortalamasını bulan Console örneği:<br>
+          static void Main(string[] args)<br>
+          {<br>
+          int toplam = 0,sayac=0;<br>
+          Random rnd = new Random();<br>
+          for(int i=1; i<=10;i++)<br>
+          {<br>
+          int sayi = rnd.Next(1, 100);<br>
+          Console.WriteLine(sayi);<br>
+          if(sayi>50)<br>
+          {<br>
+          toplam += sayi;<br>
+          sayac++;<br>
+          }<br>
+          }<br>
+          Console.WriteLine("50 den büyük sayıların ortalaması :{0} ",(toplam/sayac));<br>
+          Console.ReadKey();<br>
+          }<br>
+           <p style=font-size:33px;>Örnek-15<br> </p> <br>
+          =>Kullanıcıdan 10 adet sayı alarak bu sayıların toplamını ekranda gösteren Console Örneği<br>
+            static void Main(string[] args)<br>
+                  {<br>
+                      int sayi, toplam = 0;<br>
+                      for(int i=1;i<=10;i++)<br>
+                      {<br>
+                          Console.Write("{0}. Sayı : ",i);<br>
+                          sayi = Convert.ToInt32(Console.ReadLine());<br>
+                          toplam += sayi;<br>
+                      }<br>
+                      Console.WriteLine("Girdiğiniz Sayıların Toplamı : {0}",toplam);<br>
+                      Console.ReadKey();<br>
+                  }<br>
+         
+
+        
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,423 @@
+<html>
+    <title>C# KOD ÖRNEKLERİ</title>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<body>
+    <html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <a class="navbar-brand" href="#">KOD</a>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Ana Sayfa</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Sayfa2.html">Sayfa 2</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Sayfa3.html">Sayfa 3</a>
+    </li>
+  </ul>
+</nav>
+
+     <style>
+     body {
+    background-color:turquoise;
+    }
+    </style>
+       
+    <div class="container pt-3 pb-5">
+        <a href="index.html" class="btn btn-info">Ana Sayfa</a>&nbsp;
+        <a href="Sayfa2.html" class="btn btn-info">Sayfa 2</a>&nbsp;
+        <a href="Sayfa3.html" class="btn btn-info">Sayfa 3</a>&nbsp;
+        <body>
+            <style> 
+            div {
+              border: 2px solid;
+              padding: 20px; 
+              width: 300px;
+              resize: horizontal;
+              overflow: auto;
+            }
+            </style>
+            <style>
+                div {
+                  background-color: white;
+                  width: 300px;
+                  border: 15px solid black;
+                  padding: 50px;
+                  margin: 20px;
+                }
+                </style>
+                <img src="indir.png" alt="C#" width="100" height="100"> 
+                <img src="indir.png" alt="C#" width="100" height="100"> 
+                <img src="indir.png" alt="C#" width="100" height="100"> 
+                <img src="indir.png" alt="C#" width="100" height="100"> 
+                <img src="indir.png" alt="C#" width="100" height="100"> 
+                <img src="indir.png" alt="C#" width="100" height="100"> 
+                <img src="indir.png" alt="C#" width="100" height="100"> 
+                <p style=font-size:33px;>Örnek-16<br> </p> <br>
+                =>Kullanıcıdan başlangıç, bitiş ve artım değeri istenerek, verilen artış miktarına göre başlangıç ve bitiş sayıları arasındaki sayıları ekranda gösteren programı oluşturunuz.<br>
+                 static void Main(string[] args)<br>
+                        {<br>
+                            int baslangic, bitis, artis;<br>
+                            Console.Write("Başlangıç : ");<br>
+                            baslangic = Convert.ToInt32(Console.ReadLine());<br>
+                            Console.Write("Bitiş : ");<br>
+                            bitis = Convert.ToInt32(Console.ReadLine());<br>
+                            Console.Write("Artış : ");<br>
+                            artis = Convert.ToInt32(Console.ReadLine());<br>
+                            for(int i=baslangic;i<=bitis;i+=artis)<br>
+                            {<br>
+                                Console.WriteLine(i);<br>
+                            }<br>
+                 
+                            Console.ReadKey();<br>
+                        }<br>
+                 
+                <p style=font-size:33px;>Örnek-17<br> </p> <br>
+                =>10 elemanlı diziye değer girme ve dizi içindeki değerlerleri For Döngüsü kullanarak yazdırma örneği.<br>
+                int[] a = new int[10];<br>
+                a[0] = 0;<br>
+                a[1] = 100;<br>
+                a[2] = 200;<br>
+                a[3] = 300;<br>
+                a[4] = 400;<br>
+                a[5] = 500;<br>
+                a[6] = 600;<br>
+                a[7] = 700;<br>
+                a[8] = 800;<br>
+                a[9] = 900;<br>
+                for (int i = 0; i<10; i++) 
+                { Console.WriteLine(“A’nın[{0}] değeri = {1}”, i, a[i]); }<br>
+                Console.ReadKey();<br>
+                 
+                <p style=font-size:33px;>Örnek-18<br> </p> <br>
+                =>C# Girilen Sayının Asal Olup Olmadığını Bulma<br>
+                tatic void Main(string[] args)<br>
+              {<br>
+                  int sayac = 0;<br>
+                  Console.WriteLine("Sayıyı Girin");<br>
+                  int sayi = Convert.ToInt32(Console.ReadLine());<br>
+                  for(int i = 1; i <= sayi; i++)<br>
+                  {<br>
+                      if (sayi % 2 == 0)<br>
+                      {<br>
+                          break;<br>
+                      }<br>
+                  }<br>
+                  if (sayac == 2)<br>
+                  {<br>
+                      Console.WriteLine("Girdiğiniz {0} sayısı Asal Sayıdır.",sayi);<br>
+                  }<br>
+                  else<br>
+                  {<br>
+                      Console.WriteLine("Girdiğiniz {0} sayısı Asal Sayı Değildir.", sayi);<br>
+                  }<br>
+                  Console.ReadKey();<br>
+              }<br>
+                <p style=font-size:33px;>Örnek-19<br> </p> <br>
+                =>Girilen Metindeki Sesli Harfleri Bulan Program <br>
+                class Program <br>
+          { <br>
+              static void Main(string[] args) <br>
+              { <br>
+                  string metin = "Merhaba Dünya, bu örnek bir program"; <br>
+                  string sesli = "aeıioöuü"; <br>
+       
+                  int sayac =0; <br>
+                  for (int i = 0; i < metin.Length; i++) <br>
+                  { <br>
+                     
+                      if(sesli.Contains(metin[i])) <br>
+                      { <br>
+                          sayac++; <br>
+                      } <br>
+                  } <br>
+                  Console.WriteLine(metin); <br>
+                  Console.WriteLine("Yukarıdaki ifadede toplam {0} \ntane sesli harf vardır.",sayac); <br>
+                  Console.ReadLine(); <br>
+              } <br>
+          } <br>
+                <p style=font-size:33px;>Örnek-20<br> </p> <br>
+                =>Vücut Kitle İndeksi Hesaplama<br>
+                static void Main(string[] args)<br>
+              {<br>
+                  double boy, kilo,indeks=0;<br>
+                  Console.Write("Boyunuzu m cinsinden Giriniz (Ör:1,65)  : ");<br>
+                  boy = Convert.ToDouble(Console.ReadLine());<br>
+                  Console.Write("Kilonuzu Giriniz : ");<br>
+                  kilo = Convert.ToDouble(Console.ReadLine());<br>
+                  indeks = kilo / (boy * boy);<br>
+                  Console.WriteLine("================================================");<br>
+                  Console.WriteLine("Vücut Kitle İndexiniz : {0}",indeks);<br>
+                  if (indeks < 18)<br>
+                  {<br>
+                      Console.WriteLine("Zayıf");<br>
+                  }<br>
+                  else if(indeks>=18 && indeks < 25)<br>
+                  {<br>
+                      Console.WriteLine("Normal");<br>
+                  }<br>
+                  else if (indeks >= 25 && indeks < 30)<br>
+                  {<br>
+                      Console.WriteLine("Kilolu");<br>
+                  }<br>
+                  else if (indeks >= 30 && indeks < 35)<br>
+                  {<br>
+                      Console.WriteLine("Obez");<br>
+                  }<br>
+                  else<br>
+                  {
+                      Console.WriteLine("Ciddi Obez");<br>
+                  }<br>
+                  Console.ReadKey();<br>
+              }<br>
+       
+                <p style=font-size:33px;>Örnek-21<br> </p> <br>
+                =>For Döngüsü ile Sonsuz Döngü Oluşturma<br>
+                static void Main(string[] args)<br>
+              {<br>
+                  double sayi, sayac = 0, toplam = 0;<br>
+                  for (;;)<br>
+                  {<br>
+                      Console.Write("Sayı Girin : ");<br>
+                      sayi = Convert.ToDouble(Console.ReadLine());<br>
+                      if(sayi==0)<br>
+                          {<br>
+                          break;<br>
+                          }<br>
+                      else<br>
+                      {<br>
+                          toplam += sayi;<br>
+                          sayac++;<br>
+                      }<br>
+                      
+                    }<br>
+                  Console.WriteLine("Ortalama : "+toplam/sayac);<br>
+                  Console.ReadLine();<br>
+              }<br>
+                <p style=font-size:33px;>Örnek-22<br> </p> <br>
+                =>Sayının Karesini Alma<br>
+                static void Main(string[] args)<br>
+                {<br>
+                    Console.Write("Sayı  : ");<br>
+                    int sayi = Convert.ToInt32(Console.ReadLine());<br>
+                    int sonuc = sayi * sayi;<br>
+                    Console.WriteLine(sayi+ " sayısının karesi : "+sonuc);<br>
+                    
+                    Console.ReadKey();<br>
+                }<br>
+                <p style=font-size:33px;>Örnek-23<br> </p> <br>
+                =>Girilen Sayının Rakamlarının Toplamını Bulma <br>
+                static void Main(string[] args) <br>
+              { <br>
+                  int sayi, sonuc = 0; <br>
+                  Console.Write("Sayı Girin : "); <br>
+                  sayi = Convert.ToInt32(Console.ReadLine()); <br>
+                  while (sayi > 0) <br>
+                  { <br>
+                      sonuc += (sayi % 10); <br>
+                      sayi = sayi / 10; <br>
+                  } <br>
+                  Console.WriteLine("Girdiğiniz Sayının Rakamları Toplamı : "+sonuc); <br>
+                  Console.ReadKey(); <br>
+              } <br>
+                <p style=font-size:33px;>Örnek-24<br> </p> <br>
+                =>Diziyi Alfabetik Olarak Sıralama<br>
+                static void Main(string[] args)<br>
+              {<br>
+                  int adet;<br>
+                  Console.Write("Girilecek Veri Adeti : ");<br>
+                  adet = Convert.ToInt16(Console.ReadLine());<br>
+       
+                  Console.WriteLine("---------------------------------------");<br>
+                  string[] liste = new string[adet];<br>
+                  string isim;<br>
+       
+                  for (int i = 0; i < adet; i++)<br>
+                  {<br>
+                      Console.Write(i + 1 + ". İsmi Giriniz: ");<br>
+                      isim = Console.ReadLine();<br>
+                      liste[i] = isim;<br>
+                  } <br>
+                  Console.WriteLine();<br>
+                  Console.WriteLine("Sıralamadan önce liste:");<br>
+                  Console.WriteLine("---------------------------------------");<br>
+       
+                  foreach (string eleman in liste)<br>
+                  {<br>
+                      Console.WriteLine(eleman);<br>
+                  }<br>
+                      
+       
+                  Array.Sort(liste);<br>
+                  Console.WriteLine();<br>
+                  Console.WriteLine("A-Z Sıralama:");<br>
+                  Console.WriteLine("---------------------------------------");<br>
+       
+                  foreach (string eleman in liste)<br>
+                  {<br>
+                      Console.WriteLine(eleman);<br>
+                  }<br>
+                  Console.WriteLine();<br>
+                  Array.Reverse(liste);<br>
+                  Console.WriteLine("Z-A Sıralama:");<br>
+                  Console.WriteLine("---------------------------------------");<br>
+       
+                  foreach (string eleman in liste)<br>
+                  {<br>
+                      Console.WriteLine(eleman);<br>
+                  }<br>
+       
+                  Console.ReadKey();<br>
+              }<br>
+                
+                <p style=font-size:33px;>Örnek-25<br> </p> <br>
+                =>1-N arası 3 e ve 7’ye Tam Bölünen Sayıları Listeleme<br>
+                static void Main(string[] args)<br>
+                {<br>
+                    Console.Write("Sayıyı Gir : ");<br>
+                    int n = int.Parse(Console.ReadLine());<br>
+                    for (int i = 1; i <= n; i++)<br>
+                    {<br>
+                        if (i % 3 == 0 && i % 7 == 0)<br>
+                        {<br>
+                            Console.Write("{0} ", i);<br>
+                        }<br>
+                    }<br>
+                    Console.ReadKey();<br>
+                }<br>
+
+
+                <p style=font-size:33px;>Örnek-26<br> </p> <br>
+                =>Haklı Sayı Bulma Oyunu:
+                static void Main(string[] args)<br>
+                int sayi, hak = 5;<br>
+            bool durum = false;<br>
+            Random rastgele = new Random();<br>
+            int rastgeleSayi = rastgele.Next(0, 100);<br>
+            for (int i = hak; i > 0; i--)<br>
+            {<br>
+                Console.WriteLine("Hak {0}",i);<br>
+                Console.Write("Tahmininiz :");<br>
+                sayi = int.Parse(Console.ReadLine());<br>
+                if (sayi == rastgeleSayi)<br>
+                {<br>
+                    Console.WriteLine("Tebrikler");<br>
+                    durum = true;<br>
+                    break;<br>
+                }<br>
+            }<br>
+            if (!durum)<br>
+            {<br>
+                Console.WriteLine("Tekrar Deneyin!");<br>
+                Console.WriteLine("Sayı : {0}", rastgeleSayi);<br>
+            }<br>
+            Console.ReadKey();<br>
+        }<br>
+                <p style=font-size:33px;>Örnek-27<br> </p> <br>
+                =>Girilen sayının mükemmel sayı olup olmadığını bulan programı<br>
+                static void Main(string[] args)<br>
+                Console.WriteLine ("Sayı giriniz"); <br>
+                int sayi = Convert.ToInt32 (Console.ReadLine ()); <br>
+                int toplam = 0;<br>
+                for (int i = 1; i <sayi; i ++) <br>
+                { <br>
+                   if (sayi% i == 0) <br>
+                   { <br>
+                     toplam = toplam + i; <br>
+                   } <br>
+                }<br>
+                if (toplam == sayi) <br>
+                { <br>
+                   Console.WriteLine (sayi + "sayı Mükemmel Sayıdır"); <br>
+                }<br>
+                else <br>
+                { <br>
+                   Console.WriteLine (sayi + "sayı Mükemmel Sayı Değildir"); <br>
+                }<br>
+                Console.ReadLine ();<br>
+ 
+                <p style=font-size:33px;>Örnek-28<br> </p> <br>
+                =>Üslü Sayı yazan program<br>
+                static void Main(string[] args)<br>
+                int taban, üssayı, hesaplama = 1;<br>
+                Console.Write("Taban sayısı : ");<br>
+                taban = Convert.ToInt32(Console.ReadLine());<br>
+                Console.Write("Kuvveti : ");<br>
+                üssayı = Convert.ToInt32(Console.ReadLine());<br>
+                for (int i = 1; i <= üssayı; i++)<br>
+                {<br>
+                    hesaplama = hesaplama * taban;<br>
+                }<br>
+                Console.WriteLine("{0} üssü {1} olan sayının sonucu = {2}", taban, üssayı, hesaplama);<br>
+                Console.ReadLine();<br>
+                <p style=font-size:33px;>Örnek-29<br> </p> <br>
+                =>Faktöriyel hesaplayan program<br>
+                static void Main(string[] args)<br>
+                Console.Write("Bir sayi giriniz: ");<br>
+                int sayi = Convert.ToInt32(Console.ReadLine());<br>
+                int faktoriyel = 1;<br>
+                for (int i = 1; i <= sayi; i++)<br>
+                {<br>
+                    faktoriyel *= i;<br>
+                }<br>
+                Console.WriteLine(sayi + "! = " + faktoriyel);<br>
+     
+                Console.ReadLine();<br>
+                <p style=font-size:33px;>Örnek-30<br> </p> <br>
+                =>Yuvarlak Sayı Bulan program<br>
+                static void Main(string[] args)<br>
+                int top = 0, carp = 1;<br>
+                string sayi1, sayi2;<br>
+                Console.Write("Birinci Sayıyı Girin:");<br>
+                sayi1 = Console.ReadLine();<br>
+                
+                Console.Write("İkinci Sayıyı Girin:");<br>
+                sayi2 = Console.ReadLine();<br>
+                
+                Console.WriteLine("[{0},{1}] aralığında ki yuvarlak ve yarı yuvarlak sayılar:", sayi1, sayi2);<br>
+                for (int i = int.Parse(sayi1); i <= int.Parse(sayi2); i++)<br>
+                {<br>
+                    int uzunluk = i.ToString().Length;<br>
+                    while (uzunluk > 0)<br>
+                    {<br>
+                        top += int.Parse(i.ToString()[uzunluk-1].ToString());<br>
+                        carp *= int.Parse(i.ToString()[uzunluk-1].ToString());<br>
+                        uzunluk--;<br>
+                    }<br>
+                    if (top == carp)<br>
+                    {<br>
+                        Console.Write( "{0,4} : yuvarlak sayı \t \t",i);<br>
+                    }<br>
+                    else if (top == carp / 2)<br>
+                    {<br>
+                        Console.Write("{0,4} : yarı yuvarlak sayı \t",i);<br>
+                    }<br>
+                    top = 0;carp = 1;<br>
+                }<br>
+    
+                Console.ReadLine();<br>
